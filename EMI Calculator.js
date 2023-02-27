@@ -23,7 +23,7 @@ btn.addEventListener("click", (e) => {
 
         let fixedNum = parseFloat(Answer).toFixed( 2 );
     
-        document.querySelector("#answer").innerText = `Your EMI Amount is ${fixedNum}`
+        document.querySelector("#answer").innerText = "Your EMI Amount is " + fixedNum
     }
 })
 
