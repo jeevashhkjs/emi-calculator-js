@@ -10,18 +10,20 @@ btn.addEventListener("click", (e) => {
     let interests = interest.value
     let months = month.value
 
+    if(amt.value != "" && interest.value != "" && month.value != ""){
+        let finalR = interests / (12 * 100)
 
+        let result = (principleAmount * finalR)
+        let result1 = (Math.pow(1 + finalR, months))
+        let result2 = result1 - 1
+    
+        let FinelResult = result * result1
+    
+        let Answer = FinelResult / result2
 
-    let finalR = interests / (12 * 100)
-
-    let result = (principleAmount * finalR)
-    let result1 = (Math.pow(1 + finalR, months))
-    let result2 = result1 - 1
-
-    let FinelResult = result * result1
-
-    let Answer = FinelResult / result2
-
-    document.querySelector("#answer").innerText = Answer
+        let fixedNum = parseFloat(Answer).toFixed( 2 );
+    
+        document.querySelector("#answer").innerText = `Your EMI Amount is ${fixedNum}`
+    }
 })
 
