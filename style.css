@@ -37,7 +37,6 @@ button#submit {
     background-color: #2929ff;
     border-radius: 10px;
     font-size: 16px;
-    margin-bottom: 51px;
     width: 190px;
 }
 button#submit:hover{
@@ -47,10 +46,10 @@ button#submit:hover{
     cursor: pointer;
 }
 
-h4#answer {
-    font-size: 35px;
+h4 {
+    font-size: 20px;
     color: #21217a;
-    text-align: center;
+    text-align:left;
 }
 .content{
     display: flex;
@@ -81,4 +80,21 @@ select {
 
 select:focus{
     border:solid 1px pink;
+}
+.answers{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.ans1 {
+    margin-top: 12px;
+    margin-bottom: 23px;
+}
+.ans2{
+    font-size: 30px;
+    color: #373783;
+}
+h5{
+    color: deeppink;
+    display: inline-block;
 }
