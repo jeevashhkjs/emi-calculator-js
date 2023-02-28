@@ -8,7 +8,7 @@ body{
 }
 form{
     border: solid 2px gray;
-    width: 70%;
+    width: 50%;
     margin: 20px auto;
     box-shadow: 1px 2px 14px 0px #8888cb;
 }
@@ -19,10 +19,10 @@ input{
     border: solid 2px gray;
     font-size: 18px;
     color: #0b0b6c;
+    padding-left: 5px;
 }
 h1{
     text-align: center;
-    padding-top: 70px;
     font-family: sans-serif;
     color: cornflowerblue;
 }
@@ -37,8 +37,8 @@ button#submit {
     background-color: #2929ff;
     border-radius: 10px;
     font-size: 16px;
-    margin-top: 36px;
-    margin-left: 70px;
+    margin-bottom: 51px;
+    width: 190px;
 }
 button#submit:hover{
     background-color: white;
@@ -47,23 +47,38 @@ button#submit:hover{
     cursor: pointer;
 }
 
-h2#answer {
-    padding-top: 14px;
+h4#answer {
     font-size: 35px;
     color: #21217a;
     text-align: center;
-    margin-top: 12px;
-    padding-bottom: 25px;
 }
- .content{
-    margin-left: 332px;
+.content{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    gap: 30px;
+    margin-top: 24px;
 }
-.content1 {
-    margin-top: 18px;
+.contente{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.content2 {
-    margin-top: 25px;
+.YandM{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.content3 {
-    margin-top: 22px;
+select {
+    width: 126px;
+    height: 32px;
+    color: blue;
+    font-size: 19px;
+    background-color: #dddde7;
+    border: solid 1px blue;
+    margin-top: 9px;
+}
+
+select:focus{
+    border:solid 1px pink;
 }

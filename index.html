@@ -9,21 +9,31 @@
         <h1>EMI Calculator</h1>
         <form>
             <div class="content">
-                <div class="content1">
-                    <label>Amount</label>
-                    <input type="number" id="amt" class="amt" name="amt" />
+                <div class="contente">
+                    <label>Loan Amount in Rs</label>
+                    <input type="number" id="amt" class="amt" name="amt"/>
                 </div>
-                <div class="content2">
-                    <label>Interest  (without %)</label>
+                <div class="contente">
+                    <label>	Interest Rate in % p.a.</label>
                     <input type="number" id="interest" class="interest" name="interest" />
                 </div>
-                <div class="content3">
-                    <label>Months</label>
+                <div class="contente">
+                    <label>Period</label>
                     <input type="number" id="month" class="month" name="month" />
                 </div>
-                <button id="submit">Summit</button>
+                <div class="YandM">
+                    <label>Please select your Period Type</label>
+                    <select id="yandm">
+                        <option value="">Select your type</option>
+                        <option value="year">Year</option>
+                        <option value="month">Month</option>
+                    </select>
+                </div>
+                <div class="contente">
+                    <button id="submit">Summit</button>
+                </div>
             </div>
-            <h2 id="answer"></h2>
+            <h4 id="answer"></h4>
         </form>
     </div>
     <script src="./EMI Calculator.js"></script>
