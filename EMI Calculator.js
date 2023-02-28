@@ -24,7 +24,6 @@ function monthWork(principleAmount,interests,months){
     if(amt.value != "" && interest.value != "" && month.value != "" && value.value){
         let finalR = interests / (12 * 100)
 
-
         let result = (principleAmount * finalR)
     
         let result1 = (Math.pow(1 + finalR, months))
@@ -33,8 +32,6 @@ function monthWork(principleAmount,interests,months){
         let FinelResult = result * result1
     
         let Answer = FinelResult / result2
-
-        // let fixedNum = parseFloat(Answer).toFixed( 2 );
 
         let TotalAmount = months * Answer
         let interestsss = TotalAmount - principleAmount
@@ -55,7 +52,6 @@ function YearWork(principleAmount,interests,months){
     if(amt.value != "" && interest.value != "" && month.value != "" && value.value){
         let finalR = interests / (12 * 100)
 
-
         let result = (principleAmount * finalR)
     
         let result1 = (Math.pow(1 + finalR, monthss))
@@ -64,8 +60,6 @@ function YearWork(principleAmount,interests,months){
         let FinelResult = result * result1
     
         let Answer = FinelResult / result2
-
-        // let fixedNum = parseFloat(Answer).toFixed( 2 );
 
         let TotalAmount = months * Answer
         let interestsss = TotalAmount - principleAmount
