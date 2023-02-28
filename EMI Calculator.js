@@ -37,9 +37,9 @@ function monthWork(principleAmount,interests,months){
         let interestsss = TotalAmount - principleAmount
         console.log(TotalAmount)
     
-        document.querySelector("#answer").innerHTML = `Your EMI Amount is:<h5>${Math.floor(Answer)}</h5>`
-        document.querySelector("#amount").innerHTML = `Your Total Payable is:<h5>${Math.floor(TotalAmount)}</h5>`
-        document.querySelector("#interst").innerHTML = `Your interest is:<h5>${Math.floor(interestsss)}</h5>`
+        document.querySelector("#answer").innerHTML = `Your EMI Amount is:<h5>${Math.floor(Number(Answer))}</h5>`
+        document.querySelector("#amount").innerHTML = `Your Total Payable is:<h5>${Math.floor(Number(TotalAmount))}</h5>`
+        document.querySelector("#interst").innerHTML = `Your interest is:<h5>${Math.floor(Number(interestsss))}</h5>`
 
     }else{
         alert("Please enter value")
@@ -64,9 +64,9 @@ function YearWork(principleAmount,interests,months){
         let TotalAmount = months * Answer
         let interestsss = TotalAmount - principleAmount
     
-        document.querySelector("#answer").innerHTML = `Your EMI Amount is:<h5>${Math.floor(Answer)}</h5>`
-        document.querySelector("#amount").innerHTML = `Your Total Payable is:<h5>${Math.floor(TotalAmount)}</h5>`
-        document.querySelector("#interst").innerHTML = `Your interest is:<h5>${Math.floor(interestsss)}</h5>`
+        document.querySelector("#answer").innerHTML = `Your EMI Amount is:<h5>${Math.floor(Number(Answer))}</h5>`
+        document.querySelector("#amount").innerHTML = `Your Total Payable is:<h5>${Math.floor(Number(TotalAmount))}</h5>`
+        document.querySelector("#interst").innerHTML = `Your interest is:<h5>${Math.floor(Number(interestsss))}</h5>`
 }else{
     alert("Please enter value")
 }
