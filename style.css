@@ -79,9 +79,9 @@ select {
     border: solid 1px blue;
     margin-top: 9px;
 }
-.main{
+.main {
     display: flex;
-    margin-left: 86px;
+    margin-left: 56px;
 }
 
 select:focus{
@@ -133,12 +133,17 @@ button:hover{
     display: flex;
 }
 label#rs {
-    height: 30px;
-    width: 27px;
-    background-color: #ebe9e9;
     border: solid 2px gray;
+    width: 30px;
     text-align: center;
+    background-color: white;
 }
-.rs{
-
+label#inter {
+    border: solid 2px gray;
+    width: 30px;
+    text-align: center;
+    background-color: white;
 }
+input[type='text'] {
+    display: block;
+  }
