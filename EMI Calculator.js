@@ -17,7 +17,13 @@ mnbtn.addEventListener("click",(e)=>{
 
 year.addEventListener("click",(e)=>{
     e.preventDefault()
-    month.value = month.value / 12
+    let j = month.value
+    if (j>1) {
+        let jj=month.value/12
+        month.value=jj
+        
+    }
+   
     mnbtn.classList.remove("colors")
     year.classList.add("colors")
 })
@@ -29,22 +35,59 @@ btn.addEventListener("click", (e) => {
     let interestss = interest.value
     let monthss = month.value
 
-    if(true){
-        monthWork(principleAmounts,interestss,monthss)
-     }
-    // else if(value.value == "year"){
-    //     YearWork(principleAmounts,interestss,monthss)
-    // }
+   let year = document.querySelector("#year")
+   if(year.classList.contains("colors")){
+    YearWork(principleAmounts,interestss,monthss)
+   }else{
+    monthWork(principleAmounts,interestss,monthss)
+   }
 
 })
 
 function monthWork(principleAmount,interests,months){
-    if(amt.value != "" && interest.value != "" && month.value != ""){
+
+        if(amt.value != "" && interest.value != "" && month.value != ""){
+
+            if(amt.value == 0 || interest.value == 0 || month.value == 0){
+                alert("Please put greater than 1")
+            }
+            else{
+                let finalR = interests / (12 * 100)
+    
+                let result = (principleAmount * finalR)
+            
+                let result1 = (Math.pow(1 + finalR, months))
+                let result2 = result1 - 1
+            
+                let FinelResult = result * result1
+            
+                let Answer = FinelResult / result2
+        
+                let TotalAmount = months * Answer
+                let interestsss = TotalAmount - principleAmount
+                console.log(interestsss)
+            
+                document.querySelector("#answer").innerHTML = "₹" + Math.floor(Number(Answer))
+                document.querySelector("#amount").innerHTML = "₹" + Math.floor(Number(TotalAmount))
+                document.querySelector("#interst").innerHTML = "₹" + Math.floor(Number(interestsss))
+            }
+        }
+        else{
+            alert("Please enter value")
+        }
+    }
+    
+
+
+
+function YearWork(principleAmount,interests,months){
+    let monthss = months * 12
+    if(amt.value != "" && interest.value != "" && month.value != "" && value.value){
         let finalR = interests / (12 * 100)
 
         let result = (principleAmount * finalR)
     
-        let result1 = (Math.pow(1 + finalR, months))
+        let result1 = (Math.pow(1 + finalR, monthss))
         let result2 = result1 - 1
     
         let FinelResult = result * result1
@@ -53,42 +96,14 @@ function monthWork(principleAmount,interests,months){
 
         let TotalAmount = months * Answer
         let interestsss = TotalAmount - principleAmount
-        console.log(interestsss)
     
-        document.querySelector("#answer").innerHTML = "₹" + Math.floor(Number(Answer))
-        document.querySelector("#amount").innerHTML = "₹" + Math.floor(Number(TotalAmount))
-        document.querySelector("#interst").innerHTML = "₹" + Math.floor(Number(interestsss))
-
-    }else{
-        alert("Please enter value")
-    }
+        document.querySelector("#answer").innerHTML = `Your EMI Amount is:<h5>${Math.floor(Number(Answer))}</h5>`
+        document.querySelector("#amount").innerHTML = `Your Total Payable is:<h5>${Math.floor(Number(TotalAmount))}</h5>`
+        document.querySelector("#interst").innerHTML = `Your interest is:<h5>${Math.floor(Number(interestsss))}</h5>`
+}else{
+    alert("Please enter value")
 }
-
-
-// function YearWork(principleAmount,interests,months){
-//     let monthss = months * 12
-//     if(amt.value != "" && interest.value != "" && month.value != "" && value.value){
-//         let finalR = interests / (12 * 100)
-
-//         let result = (principleAmount * finalR)
-    
-//         let result1 = (Math.pow(1 + finalR, monthss))
-//         let result2 = result1 - 1
-    
-//         let FinelResult = result * result1
-    
-//         let Answer = FinelResult / result2
-
-//         let TotalAmount = months * Answer
-//         let interestsss = TotalAmount - principleAmount
-    
-//         document.querySelector("#answer").innerHTML = `Your EMI Amount is:<h5>${Math.floor(Number(Answer))}</h5>`
-//         document.querySelector("#amount").innerHTML = `Your Total Payable is:<h5>${Math.floor(Number(TotalAmount))}</h5>`
-//         document.querySelector("#interst").innerHTML = `Your interest is:<h5>${Math.floor(Number(interestsss))}</h5>`
-// }else{
-//     alert("Please enter value")
-// }
-// }
+}
 
 
 
