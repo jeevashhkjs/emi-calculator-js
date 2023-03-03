@@ -3,38 +3,40 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: rgb(226 237 255);
+body {
+    background-color: #61b1ff;
+    font-family: sans-serif;
 }
 form{
     border: solid 2px gray;
     width: 50%;
     margin: 20px auto;
-    box-shadow: 1px 2px 14px 0px #8888cb;
+    box-shadow: 1px 2px 30px 3px #0000ff;
+    background-color: #61b1ff;
 }
 input{
     display: block;
     height: 30px;
     width: 330px;
     border: solid 2px gray;
-    font-size: 18px;
-    color: #0b0b6c;
+    font-size: 15px;
+    color: #000;
     padding-left: 5px;
 }
 h1{
     text-align: center;
     font-family: sans-serif;
-    color: cornflowerblue;
+    color: #fff;
 }
 label{
-    font-size: 30px;
+    font-size: 20px;
     color: #373783;
 }
 button#submit {
     padding: 10px 60px;
     border: solid 1px gray;
     color: white;
-    background-color: #2929ff;
+    background-color: #00203F;
     border-radius: 10px;
     font-size: 16px;
     width: 190px;
@@ -48,7 +50,7 @@ button#submit:hover{
 
 p {
     font-size: 20px;
-    color: #21217a;
+    color: #1e1e1e;
     text-align:left;
 }
 .content{
@@ -95,7 +97,7 @@ h5{
     display: inline-block;
 }
 .mnn {
-    margin-top: 34px;
+    margin-top: 23px;
 }
 .pd{
     height: 30px;
@@ -119,8 +121,24 @@ button#mnth {
 }
 .colors{
     color: white;
-    background-color: green;
+    background-color: rgb(0, 85, 124);
 }
 .clamn{
     padding-left: 140px;
+}
+button:hover{
+    cursor: pointer;
+}
+.cn{
+    display: flex;
+}
+label#rs {
+    height: 30px;
+    width: 27px;
+    background-color: #ebe9e9;
+    border: solid 2px gray;
+    text-align: center;
+}
+.rs{
+
 }

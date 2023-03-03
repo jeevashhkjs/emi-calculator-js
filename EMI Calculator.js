@@ -5,7 +5,7 @@ let month = document.querySelector("#month")
 let mnbtn = document.querySelector("#mnth")
 let year = document.querySelector("#year")
 
-mnbtn.classList.add("colors")
+year.classList.add("colors")
 
 mnbtn.addEventListener("click",(e)=>{
     e.preventDefault()
@@ -82,7 +82,7 @@ function monthWork(principleAmount,interests,months){
 
 function YearWork(principleAmount,interests,months){
     let monthss = months * 12
-    if(amt.value != "" && interest.value != "" && month.value != "" && value.value){
+    if(amt.value != "" && interest.value != "" && month.value != ""){
         let finalR = interests / (12 * 100)
 
         let result = (principleAmount * finalR)
@@ -97,9 +97,9 @@ function YearWork(principleAmount,interests,months){
         let TotalAmount = months * Answer
         let interestsss = TotalAmount - principleAmount
     
-        document.querySelector("#answer").innerHTML = `Your EMI Amount is:<h5>${Math.floor(Number(Answer))}</h5>`
-        document.querySelector("#amount").innerHTML = `Your Total Payable is:<h5>${Math.floor(Number(TotalAmount))}</h5>`
-        document.querySelector("#interst").innerHTML = `Your interest is:<h5>${Math.floor(Number(interestsss))}</h5>`
+        document.querySelector("#answer").innerHTML = "₹" + Math.floor(Number(Answer))
+        document.querySelector("#amount").innerHTML = "₹" + Math.floor(Number(TotalAmount))
+        document.querySelector("#interst").innerHTML = "₹" + Math.floor(Number(interestsss))
 }else{
     alert("Please enter value")
 }
