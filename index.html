@@ -18,16 +18,16 @@
                     <input type="number" id="interest" class="interest" name="interest" />
                 </div>
                 <div class="contente">
-                    <label>Period</label>
-                    <input type="number" id="month" class="month" name="month" />
-                </div>
-                <div class="YandM">
-                    <label>Please select your Period Type</label>
-                    <select id="yandm">
-                        <option value="">Select your type</option>
-                        <option value="year">Year</option>
-                        <option value="month">Month</option>
-                    </select>
+                    <div class="main">
+                        <div class="mn">
+                            <label>Period</label>
+                            <input type="number" id="month" class="month" name="month" />
+                        </div>
+                        <div class="mnn">
+                            <button id="year" class="pd">Yr</button>
+                            <button id="mnth" class="pd">Mn</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="contente">
                     <button id="submit">Summit</button>
@@ -35,8 +35,11 @@
             </div>
             <div class="answers">
                 <div class="ans1">
+                    <p>Your EMI Amount is</p>
                     <h4 id="answer"></h4>
+                    <p>Your Total Payable is</p>
                     <h4 id="amount"></h4>
+                    <p>Your interest is</p>
                     <h4 id="interst"></h4>
                 </div>
             </div>

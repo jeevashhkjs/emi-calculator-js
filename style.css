@@ -77,6 +77,10 @@ select {
     border: solid 1px blue;
     margin-top: 9px;
 }
+.main{
+    display: flex;
+    margin-left: 86px;
+}
 
 select:focus{
     border:solid 1px pink;
@@ -97,4 +101,13 @@ select:focus{
 h5{
     color: deeppink;
     display: inline-block;
+}
+.mnn {
+    margin-top: 34px;
+}
+.pd{
+    height: 30px;
+    width: 40px;
+    background: white;
+    border: solid 2px gray;
 }
