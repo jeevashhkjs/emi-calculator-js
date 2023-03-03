@@ -46,7 +46,7 @@ button#submit:hover{
     cursor: pointer;
 }
 
-h4 {
+p {
     font-size: 20px;
     color: #21217a;
     text-align:left;
@@ -85,15 +85,7 @@ select {
 select:focus{
     border:solid 1px pink;
 }
-.answers{
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-.ans1 {
-    margin-top: 12px;
-    margin-bottom: 23px;
-}
+
 .ans2{
     font-size: 30px;
     color: #373783;
@@ -110,4 +102,25 @@ h5{
     width: 40px;
     background: white;
     border: solid 2px gray;
+}
+button#mnth {
+    position: relative;
+    right: 4px;
+}
+.ans1 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+.anss {
+    text-align: center;
+    color: tomato;
+}
+.colors{
+    color: white;
+    background-color: green;
+}
+.clamn{
+    padding-left: 140px;
 }
