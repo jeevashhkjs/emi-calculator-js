@@ -132,13 +132,13 @@ button:hover{
 .cn{
     display: flex;
 }
-label#rs {
+button#rs {
     border: solid 2px gray;
     width: 30px;
     text-align: center;
     background-color: white;
 }
-label#inter {
+button#inter {
     border: solid 2px gray;
     width: 30px;
     text-align: center;
