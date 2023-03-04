@@ -7,7 +7,7 @@ let year = document.querySelector("#year")
 
 
 let range = document.querySelectorAll('input[type="range"]')
-let inputs = document.querySelectorAll('input[type="number"]')
+let inputs = document.querySelectorAll('input[type="text"]')
 
 for(let j=0;j<range.length;j++){
     range[j].addEventListener("input",()=>{
@@ -21,7 +21,6 @@ year.classList.add("colors")
 let inp = document.querySelector("#amt")
 inp.addEventListener("keyup", () => {
   document.querySelector("#amtrange").value = inp.value
-  checking(PAmount,interes,moths)
 })
 
 
@@ -41,10 +40,12 @@ for(let l=0;l<btn.length;l++){
 
 year.addEventListener("click",(e)=>{
     e.preventDefault()
-    month.value = month.value * 12
+    if(month.value > 1){
+        month.value = month.value / 12
+    }
 
-    year.classList.remove("colors")
-    mnbtn.classList.add("colors")
+    year.classList.add("colors")
+    mnbtn.classList.remove("colors")
 })
 
 mnbtn.addEventListener("click",(e)=>{
