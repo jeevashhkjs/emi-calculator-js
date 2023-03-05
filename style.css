@@ -4,15 +4,15 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #61b1ff;
+    background-color: #e0f0ff;
     font-family: sans-serif;
 }
 form{
     border: solid 2px gray;
     width: 50%;
-    margin: 20px auto;
-    box-shadow: 1px 2px 30px 3px #0000ff;
-    background-color: #61b1ff;
+    margin: 24px auto;
+    box-shadow: 1px 2px 30px 3px #c1c1c9;
+    background-color: #dfefff;
 }
 input{
     display: block;
@@ -26,7 +26,8 @@ input{
 h1{
     text-align: center;
     font-family: sans-serif;
-    color: #fff;
+    color: hsl(230deg 64% 65%);
+    margin-top: 44px;  
 }
 label{
     font-size: 20px;
@@ -117,7 +118,8 @@ button#mnth {
 }
 .anss {
     text-align: center;
-    color: tomato;
+    color: #1c4a3e;
+    font-size: 20px;
 }
 .colors{
     color: white;
@@ -147,3 +149,13 @@ button#inter {
 input[type='text'] {
     display: block;
   }
+input[type='range']:hover {
+    cursor: pointer;
+}
+p#notify {
+    text-align: center;
+    color: red;
+    font-family: auto;
+    font-size: 25px;
+    display: none;
+}
